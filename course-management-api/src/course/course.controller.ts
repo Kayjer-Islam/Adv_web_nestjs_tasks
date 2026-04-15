@@ -45,7 +45,7 @@ export class CourseController {
     return this.courseService.deleteCourse(id);
   }
 
-  // ---------------- FILE UPLOAD ----------------
+  
   @Post(':id/upload')
   @UseInterceptors(FileInterceptor('file', {
     storage: diskStorage({
